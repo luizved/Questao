@@ -16,7 +16,7 @@ public class Main {
         p1.opcaoC = "(C) - Tesseract";
         p1.opcaoD = "(D) - Éter";
         p1.opcaoE = "(E) - Bifrost";
-        p1.correta = "c";
+        p1.correta = "b";
 
         p1.escrevaQuestao();
         String resposta = p1.leiaResposta();
