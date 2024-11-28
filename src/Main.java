@@ -70,6 +70,28 @@ public class Main {
             acertos++;
         }else{}
 
+        System.out.println("-------------------------------------------------------------");
+
+        Questao p4= new Questao();
+        p4.pergunta = "(4) De qual planta Thanos é?";
+        p4.opcaoA = "(A) - Titan";
+        p4.opcaoB = "(B) - Vormir";
+        p4.opcaoC = "(C) - Knowhere";
+        p4.opcaoD = "(D) - Terra";
+        p4.opcaoE = "(E) - Jupiter";
+        p4.correta = "a";
+
+        p4.escrevaQuestao();
+        resposta = p4.leiaResposta();
+        System.out.println(resposta);
+        p4.isCorreta(resposta);
+
+        //if e else para realizar a contabilização dos acertos e dos erros
+        if(p4.isCorreta(resposta)) {
+            acertos++;
+        }else{}
+
+
         //--------------------------------------------------------------------------
         int erros = totalPerguntas - acertos;
         double porcentagemAcertos = (double) acertos / totalPerguntas * 100;
