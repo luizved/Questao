@@ -91,6 +91,28 @@ public class Main {
             acertos++;
         }else{}
 
+        System.out.println("------------------------------------------------------------");
+
+        Questao p5= new Questao();
+        p5.pergunta = "(4) No filme 'A era do gelo' qual o nome do esquilo que vive atras da noz?";
+        p5.opcaoA = "(A) - Scrap";
+        p5.opcaoB = "(B) - Scrat";
+        p5.opcaoC = "(C) - Slash";
+        p5.opcaoD = "(D) - Screen";
+        p5.opcaoE = "(E) - N.D.A";
+        p5.correta = "b";
+
+        p5.escrevaQuestao();
+        resposta = p5.leiaResposta();
+        System.out.println(resposta);
+        p5.isCorreta(resposta);
+
+        //if e else para realizar a contabilização dos acertos e dos erros
+        if(p5.isCorreta(resposta)) {
+            acertos++;
+        }else{}
+
+
 
         //--------------------------------------------------------------------------
         int erros = totalPerguntas - acertos;
