@@ -6,7 +6,7 @@ public class Main {
         imp.cab();
 
 
-        int totalPerguntas = 3; // Atualize para 15 ou para quantidade total conforme adicionar mais perguntas
+        int totalPerguntas = 5; // Atualize para 15 ou para quantidade total conforme adicionar mais perguntas
         int acertos = 0;
 
         Questao p1= new Questao();
@@ -94,7 +94,7 @@ public class Main {
         System.out.println("------------------------------------------------------------");
 
         Questao p5= new Questao();
-        p5.pergunta = "(4) No filme 'A era do gelo' qual o nome do esquilo que vive atras da noz?";
+        p5.pergunta = "(5) No filme 'A era do gelo' qual o nome do esquilo que vive atras da noz?";
         p5.opcaoA = "(A) - Scrap";
         p5.opcaoB = "(B) - Scrat";
         p5.opcaoC = "(C) - Slash";
@@ -109,6 +109,27 @@ public class Main {
 
         //if e else para realizar a contabilização dos acertos e dos erros
         if(p5.isCorreta(resposta)) {
+            acertos++;
+        }else{}
+
+        System.out.println("-------------------------------------------------------------");
+
+        Questao p6= new Questao();
+        p6.pergunta = "(6) No filme 'A era do gelo' qual o nome da filha de Ellie com Manfred?";
+        p6.opcaoA = "(A) - Framboesa";
+        p6.opcaoB = "(B) - Cajuzinho";
+        p6.opcaoC = "(C) - Amora";
+        p6.opcaoD = "(D) - Laranja";
+        p6.opcaoE = "(E) - N.D.A";
+        p6.correta = "c";
+
+        p6.escrevaQuestao();
+        resposta = p6.leiaResposta();
+        System.out.println(resposta);
+        p6.isCorreta(resposta);
+
+        //if e else para realizar a contabilização dos acertos e dos erros
+        if(p6.isCorreta(resposta)) {
             acertos++;
         }else{}
 
