@@ -300,6 +300,28 @@ public class Main {
         if(p14.isCorreta(resposta)) {
             acertos++;
         }else{}
+
+        System.out.println("--------------------------------------------------------");
+
+        Questao p15= new Questao();
+        p15.pergunta = "(15) Qual a ultima transformação adiquirida por Goku ?";
+        p15.opcaoA = "(A) - Super saiyajin";
+        p15.opcaoB = "(B) - Kaioken";
+        p15.opcaoC = "(C) - Istinto superior";
+        p15.opcaoD = "(D) - Ego superior";
+        p15.opcaoE = "(E) - N.D.A";
+        p15.correta = "c";
+
+        p15.escrevaQuestao();
+        resposta = p15.leiaResposta();
+        System.out.println(resposta);
+        p15.isCorreta(resposta);
+
+        //if e else para realizar a contabilização dos acertos e dos erros
+        if(p15.isCorreta(resposta)) {
+            acertos++;
+        }else{}
+
         //--------------------------------------------------------------------------
         int erros = totalPerguntas - acertos;
         double porcentagemAcertos = (double) acertos / totalPerguntas * 100;
