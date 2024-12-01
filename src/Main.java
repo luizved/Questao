@@ -175,7 +175,47 @@ public class Main {
             acertos++;
         }else{}
 
+        System.out.println("-------------------------------------------------------");
 
+        Questao p9= new Questao();
+        p9.pergunta = "(9) Qual o nome do melhor amigo do Capitão America ?";
+        p9.opcaoA = "(A) - James Barnes";
+        p9.opcaoB = "(B) - Steve Rogers";
+        p9.opcaoC = "(C) - The winter soldier";
+        p9.opcaoD = "(D) - Tony Stark";
+        p9.opcaoE = "(E) - N.D.A";
+        p9.correta = "a";
+
+        p9.escrevaQuestao();
+        resposta = p9.leiaResposta();
+        System.out.println(resposta);
+        p9.isCorreta(resposta);
+
+        //if e else para realizar a contabilização dos acertos e dos erros
+        if(p9.isCorreta(resposta)) {
+            acertos++;
+        }else{}
+
+        System.out.println("--------------------------------------------------------");
+
+        Questao p10= new Questao();
+        p10.pergunta = "(10) Quem deu a aranha de ferro para o Peter ?";
+        p10.opcaoA = "(A) - Hulk";
+        p10.opcaoB = "(B) - Homem de ferro";
+        p10.opcaoC = "(C) - Thor";
+        p10.opcaoD = "(D) - Batman";
+        p10.opcaoE = "(E) - N.D.A";
+        p10.correta = "b";
+
+        p10.escrevaQuestao();
+        resposta = p10.leiaResposta();
+        System.out.println(resposta);
+        p10.isCorreta(resposta);
+
+        //if e else para realizar a contabilização dos acertos e dos erros
+        if(p10.isCorreta(resposta)) {
+            acertos++;
+        }else{}
 
         //--------------------------------------------------------------------------
         int erros = totalPerguntas - acertos;
