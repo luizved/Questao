@@ -217,6 +217,51 @@ public class Main {
             acertos++;
         }else{}
 
+        System.out.println("--------------------------------------------------------");
+
+        Questao p11= new Questao();
+        p11.pergunta = "(11) Quantas joias do infinito existem ?";
+        p11.opcaoA = "(A) - 9";
+        p11.opcaoB = "(B) - 6";
+        p11.opcaoC = "(C) - 3";
+        p11.opcaoD = "(D) - 7";
+        p11.opcaoE = "(E) - 2";
+        p11.correta = "b";
+
+        p11.escrevaQuestao();
+        resposta = p11.leiaResposta();
+        System.out.println(resposta);
+        p11.isCorreta(resposta);
+
+        //if e else para realizar a contabilização dos acertos e dos erros
+        if(p11.isCorreta(resposta)) {
+            acertos++;
+        }else{}
+
+        System.out.println("--------------------------------------------------------");
+
+        Questao p12= new Questao();
+        p12.pergunta = "(12) Quantos aliens são disponiveis para o primeiro Ben 10 ?";
+        p12.opcaoA = "(A) - 9";
+        p12.opcaoB = "(B) - 6";
+        p12.opcaoC = "(C) - 3";
+        p12.opcaoD = "(D) - 10";
+        p12.opcaoE = "(E) - 2";
+        p12.correta = "d";
+
+        p12.escrevaQuestao();
+        resposta = p12.leiaResposta();
+        System.out.println(resposta);
+        p12.isCorreta(resposta);
+
+        //if e else para realizar a contabilização dos acertos e dos erros
+        if(p12.isCorreta(resposta)) {
+            acertos++;
+        }else{}
+
+        System.out.println("--------------------------------------------------------");
+
+
         //--------------------------------------------------------------------------
         int erros = totalPerguntas - acertos;
         double porcentagemAcertos = (double) acertos / totalPerguntas * 100;
