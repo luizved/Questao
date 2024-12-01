@@ -6,7 +6,7 @@ public class Main {
         imp.cab();
 
 
-        int totalPerguntas = 5; // Atualize para 15 ou para quantidade total conforme adicionar mais perguntas
+        int totalPerguntas = 6; // Atualize para 15 ou para quantidade total conforme adicionar mais perguntas
         int acertos = 0;
 
         Questao p1= new Questao();
@@ -130,6 +130,48 @@ public class Main {
 
         //if e else para realizar a contabilização dos acertos e dos erros
         if(p6.isCorreta(resposta)) {
+            acertos++;
+        }else{}
+
+        System.out.println("----------------------------------------------------------------");
+
+        Questao p7= new Questao();
+        p7.pergunta = "(7) Qual animal a mamute Ellie acredita ser?";
+        p7.opcaoA = "(A) - Gambá";
+        p7.opcaoB = "(B) - Gato";
+        p7.opcaoC = "(C) - Leão";
+        p7.opcaoD = "(D) - Galinha";
+        p7.opcaoE = "(E) - Rato";
+        p7.correta = "a";
+
+        p7.escrevaQuestao();
+        resposta = p7.leiaResposta();
+        System.out.println(resposta);
+        p7.isCorreta(resposta);
+
+        //if e else para realizar a contabilização dos acertos e dos erros
+        if(p7.isCorreta(resposta)) {
+            acertos++;
+        }else{}
+
+        System.out.println("-----------------------------------------------------------------");
+
+        Questao p8= new Questao();
+        p8.pergunta = "(8) Qual o nome original, em inglês, do filme A ERA DO GELO ?";
+        p8.opcaoA = "(A) - Ice island";
+        p8.opcaoB = "(B) - Snow age";
+        p8.opcaoC = "(C) - Snow island";
+        p8.opcaoD = "(D) - Ice age";
+        p8.opcaoE = "(E) - N.D.A";
+        p8.correta = "d";
+
+        p8.escrevaQuestao();
+        resposta = p8.leiaResposta();
+        System.out.println(resposta);
+        p8.isCorreta(resposta);
+
+        //if e else para realizar a contabilização dos acertos e dos erros
+        if(p8.isCorreta(resposta)) {
             acertos++;
         }else{}
 
