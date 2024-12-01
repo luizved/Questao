@@ -6,7 +6,7 @@ public class Main {
         imp.cab();
 
 
-        int totalPerguntas = 6; // Atualize para 15 ou para quantidade total conforme adicionar mais perguntas
+        int totalPerguntas = 15; // Atualize para 15 ou para quantidade total conforme adicionar mais perguntas
         int acertos = 0;
 
         Questao p1= new Questao();
@@ -26,7 +26,7 @@ public class Main {
         //if e else para realizar a contabilização dos acertos e dos erros
         if(p1.isCorreta(resposta)) {
             acertos++;
-        }else{}
+        }
 
         System.out.println("----------------------------------------------------------");
 
@@ -47,7 +47,7 @@ public class Main {
         //if e else para realizar a contabilização dos acertos e dos erros
         if(p2.isCorreta(resposta)) {
             acertos++;
-        }else{}
+        }
 
         System.out.println("------------------------------------------------------------");
 
@@ -68,7 +68,7 @@ public class Main {
         //if e else para realizar a contabilização dos acertos e dos erros
         if(p3.isCorreta(resposta)) {
             acertos++;
-        }else{}
+        }
 
         System.out.println("-------------------------------------------------------------");
 
@@ -89,7 +89,7 @@ public class Main {
         //if e else para realizar a contabilização dos acertos e dos erros
         if(p4.isCorreta(resposta)) {
             acertos++;
-        }else{}
+        }
 
         System.out.println("------------------------------------------------------------");
 
@@ -110,7 +110,7 @@ public class Main {
         //if e else para realizar a contabilização dos acertos e dos erros
         if(p5.isCorreta(resposta)) {
             acertos++;
-        }else{}
+        }
 
         System.out.println("-------------------------------------------------------------");
 
@@ -131,7 +131,7 @@ public class Main {
         //if e else para realizar a contabilização dos acertos e dos erros
         if(p6.isCorreta(resposta)) {
             acertos++;
-        }else{}
+        }
 
         System.out.println("----------------------------------------------------------------");
 
@@ -152,7 +152,7 @@ public class Main {
         //if e else para realizar a contabilização dos acertos e dos erros
         if(p7.isCorreta(resposta)) {
             acertos++;
-        }else{}
+        }
 
         System.out.println("-----------------------------------------------------------------");
 
@@ -173,7 +173,7 @@ public class Main {
         //if e else para realizar a contabilização dos acertos e dos erros
         if(p8.isCorreta(resposta)) {
             acertos++;
-        }else{}
+        }
 
         System.out.println("-------------------------------------------------------");
 
@@ -194,7 +194,7 @@ public class Main {
         //if e else para realizar a contabilização dos acertos e dos erros
         if(p9.isCorreta(resposta)) {
             acertos++;
-        }else{}
+        }
 
         System.out.println("--------------------------------------------------------");
 
@@ -215,7 +215,7 @@ public class Main {
         //if e else para realizar a contabilização dos acertos e dos erros
         if(p10.isCorreta(resposta)) {
             acertos++;
-        }else{}
+        }
 
         System.out.println("--------------------------------------------------------");
 
@@ -236,7 +236,7 @@ public class Main {
         //if e else para realizar a contabilização dos acertos e dos erros
         if(p11.isCorreta(resposta)) {
             acertos++;
-        }else{}
+        }
 
         System.out.println("--------------------------------------------------------");
 
@@ -257,7 +257,7 @@ public class Main {
         //if e else para realizar a contabilização dos acertos e dos erros
         if(p12.isCorreta(resposta)) {
             acertos++;
-        }else{}
+        }
 
         System.out.println("--------------------------------------------------------");
 
@@ -278,7 +278,7 @@ public class Main {
         //if e else para realizar a contabilização dos acertos e dos erros
         if(p13.isCorreta(resposta)) {
             acertos++;
-        }else{}
+        }
 
         System.out.println("--------------------------------------------------------");
 
@@ -299,7 +299,7 @@ public class Main {
         //if e else para realizar a contabilização dos acertos e dos erros
         if(p14.isCorreta(resposta)) {
             acertos++;
-        }else{}
+        }
 
         System.out.println("--------------------------------------------------------");
 
@@ -320,7 +320,7 @@ public class Main {
         //if e else para realizar a contabilização dos acertos e dos erros
         if(p15.isCorreta(resposta)) {
             acertos++;
-        }else{}
+        }
 
         //--------------------------------------------------------------------------
         int erros = totalPerguntas - acertos;
