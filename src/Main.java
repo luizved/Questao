@@ -261,7 +261,45 @@ public class Main {
 
         System.out.println("--------------------------------------------------------");
 
+        Questao p13= new Questao();
+        p13.pergunta = "(13) Quantos filmes Velozes e furiosos existem ate o momento ?";
+        p13.opcaoA = "(A) - 9";
+        p13.opcaoB = "(B) - 6";
+        p13.opcaoC = "(C) - 3";
+        p13.opcaoD = "(D) - 10";
+        p13.opcaoE = "(E) - 2";
+        p13.correta = "d";
 
+        p13.escrevaQuestao();
+        resposta = p13.leiaResposta();
+        System.out.println(resposta);
+        p13.isCorreta(resposta);
+
+        //if e else para realizar a contabilização dos acertos e dos erros
+        if(p13.isCorreta(resposta)) {
+            acertos++;
+        }else{}
+
+        System.out.println("--------------------------------------------------------");
+
+        Questao p14= new Questao();
+        p14.pergunta = "(14) Quantos filmes Velozes e furiosos existem ate o momento ?";
+        p14.opcaoA = "(A) - 9";
+        p14.opcaoB = "(B) - 6";
+        p14.opcaoC = "(C) - 3";
+        p14.opcaoD = "(D) - 10";
+        p14.opcaoE = "(E) - 2";
+        p14.correta = "d";
+
+        p14.escrevaQuestao();
+        resposta = p14.leiaResposta();
+        System.out.println(resposta);
+        p14.isCorreta(resposta);
+
+        //if e else para realizar a contabilização dos acertos e dos erros
+        if(p14.isCorreta(resposta)) {
+            acertos++;
+        }else{}
         //--------------------------------------------------------------------------
         int erros = totalPerguntas - acertos;
         double porcentagemAcertos = (double) acertos / totalPerguntas * 100;
